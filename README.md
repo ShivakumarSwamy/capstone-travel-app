@@ -7,7 +7,15 @@
 
 ## Get Username and API KEY's
 
-- Please get a username from [geonames](https://www.geonames.org/) to find latitude and longitude of place 
+- Please get a username from [geonames](https://www.geonames.org/) to find latitude and longitude of place
+  - Please not after a username is created, you need to [enable in geonames to use the webservice in account page](https://www.geonames.org/manageaccount), 
+    otherwise you get below error and app will ask you to try again later.
+    ```
+      status: {
+      message: 'user account not enabled to use the free webservice. Please enable it on your account page: https://www.geonames.org/manageaccount ',
+      value: 10
+      }
+    ```
 - Please get an api key from [pixabay](https://pixabay.com/) to find image of place
 - Please get an api key from [weatherbit](https://www.weatherbit.io/) to get weather data from latitude and longitude
 - Add a file `.env` in project root directory with below keys

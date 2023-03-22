@@ -32,6 +32,12 @@ app.post("/v1/planTravel", async function(request, response) {
 
   let data = {};
   const placeData = await searchPlace(request.body.placeName);
+  if(placeData.geonames === undefined) {
+    console.log("Please check secrets are added in .env and is valid and your username is enabled to use webservice in geonames. Error is", placeData);
+    response.send({ "error": "Please try again after some time." });
+    return;
+  }
+
   if (placeData.geonames.length == 0) {
     response.send({ "error": "Please input valid place name." });
     return;

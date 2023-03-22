@@ -1,0 +1,88 @@
+@use "variables";
+
+@mixin default-main-hover() {
+  &:hover {
+    border-color: #1063d5;
+  }
+}
+
+main {
+  font-family: variables.$font-family;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+
+.main-container {
+  margin: variables.$default-margin;
+}
+
+
+.main-travel-container {
+  background-color: #b9c0c4;
+  display: flex;
+  flex-direction: column;
+  padding: variables.$default-padding;
+}
+
+
+.main-travel-flex {
+  flex-direction: row;
+  padding: variables.$default-padding;
+}
+
+
+.main-travel-hover {
+  @include default-main-hover;
+}
+
+
+.main-travel-hover-search {
+  &:hover {
+    background-color: #5fb5e1;
+  }
+}
+
+
+.main-result-hide {
+  display: none;
+}
+
+
+.main-result-container {
+  background-color: #cda7bc;
+  display: flex;
+  flex-direction: column;
+  padding: variables.$default-padding;
+}
+
+
+.main-result-content {
+  padding: variables.$default-padding;
+}
+
+.main-result-content-hide {
+  display: none;
+}
+
+.main-result-image-dimension {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media(min-width: 300px) {
+
+  #place, #startDate, #endDate {
+    margin-left: variables.$default-margin-left;
+  }
+
+
+  .main-result-image-dimension {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div>
+        <h1>
+          <a href="./">Travel Planner</a>
+        </h1>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <section class="main-travel-container">
+        <div class="main-travel-flex">
+          <label for="place">My Trip to:</label>
+          <input class="main-travel-hover" id="place" type="text" placeholder="Enter place">
+        </div>
+
+        <div class="main-travel-flex">
+          <label for="startDate">Start Date: </label>
+          <input class="main-travel-hover" id="startDate" type="date">
+        </div>
+
+        <div class="main-travel-flex">
+          <label for="endDate">End Date: </label>
+          <input class="main-travel-hover" id="endDate" type="date">
+        </div>
+
+        <div class="main-travel-flex">
+          <button class="main-travel-hover-search" id="search" type="submit">Search</button>
+        </div>
+      </section>
+
+      <section class="main-result-hide" id="result">
+        <div>
+          <div class="main-result-content" id="result-place"></div>
+          <div class="main-result-content" id="result-startDate"></div>
+          <div class="main-result-content" id="result-endDate"></div>
+          <div class="main-result-content" id="result-tripLength"></div>
+          <div class="main-result-content" id="result-temp"></div>
+          <div class="main-result-content" id="result-minTemp"></div>
+          <div class="main-result-content" id="result-maxTemp"></div>
+          <div class="main-result-content" id="result-image"></div>
+        </div>
+      </section>
+    </main>
+
+  </body>
+
+</html>

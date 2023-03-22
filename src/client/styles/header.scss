@@ -1,0 +1,15 @@
+@use "variables";
+
+header {
+  h1 {
+    a {
+      font-family: variables.$font-family;
+      text-decoration: none;
+      color: variables.$primary-color;
+      font-weight: normal;
+    }
+  }
+
+  padding: 5px;
+  padding-left: 10px;
+}
